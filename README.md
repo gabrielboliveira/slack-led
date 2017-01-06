@@ -54,6 +54,8 @@ All other configurations you can choose your own. For example, I changed the nam
 
 Then it should be all working. Test it by typing `turn on` and `turn off` on the channel you chose.
 
+![Working example on slack](https://cloud.githubusercontent.com/assets/11093090/21726206/e612b324-d422-11e6-8c9c-2f96913ee05d.png)
+
 ## License
 
 [MIT](LICENSE.md)
