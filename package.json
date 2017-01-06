@@ -1,0 +1,35 @@
+{
+  "name": "slack-led",
+  "version": "1.0.0",
+  "description": "Simple Slack LED toggle switch with Raspberry Pi",
+  "main": "dist/led.js",
+  "scripts": {
+    "test": "npm run build",
+    "build": "babel src --out-dir dist --copy-files",
+    "start": "node dist/led.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielboliveira/slack-led.git"
+  },
+  "keywords": [
+    "slack",
+    "raspberry",
+    "pi",
+    "led"
+  ],
+  "author": "Gabriel Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielboliveira/slack-led/issues"
+  },
+  "homepage": "https://github.com/gabrielboliveira/slack-led#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  },
+  "dependencies": {
+    "onoff": "^1.1.1",
+    "restify": "^4.3.0"
+  }
+}
