@@ -1,5 +1,7 @@
 # slack-led
 
+[![Build Status](https://travis-ci.org/gabrielboliveira/slack-led.svg?branch=master)](https://travis-ci.org/gabrielboliveira/slack-led)
+
 Slack LED toggle switch with Raspberry Pi. Listens for a `turn` word, and then turns a LED on or off.
 
 Simple example on how to interact with Raspberry Pi via a Slack team/channel.
