@@ -16,15 +16,15 @@ server.post('/led', (req, res, next) => {
     console.log('Request received')
 
     if (req && req.params && req.params.text) {
-        let text = req.params.text.toLowerCase();
+        let text = req.params.text.toLowerCase()
 
         let ledStatus = text === 'turn on' ? 1 : (text === 'turn off' ? 0 : -1)
 
         if( ledStatus === -1) {
+            res.send('Sorry, I don\'t understand what you mean')
+        } else {
             led.writeSync(ledStatus)
             res.send({ text: `Led ${ ledStatus ? "on" : "off"}` })
-        } else {
-            res.send('Sorry, I don\'t understand what you mean')
         }
     } else {
         res.send('Sorry, I don\'t understand what you mean')
